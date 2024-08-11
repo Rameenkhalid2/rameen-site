@@ -1,0 +1,815 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* First Header */
+.header-container {
+    background-color: #273c67;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.left-header,
+.right-header {
+    font-family: Nunito, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 10px;
+}
+
+.fa-regular,
+.fa-solid {
+    padding: 0 10px;
+}
+
+/* Second Header */
+.second-header {
+    /*display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #322d4d;
+    padding: 10px;
+    color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #322d4d;
+    padding: 10px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-section {
+    padding-left: 70px;
+}
+
+.logo-section img {
+    max-height: 130px;
+    max-width: 130px;
+}
+
+.menu-section {
+    display: flex;
+    align-items: center;
+    font-family: Nunito, sans-serif;
+    margin-right: 160px;
+    font-size: 16px;
+}
+
+.menu-section span,
+.dropbtn {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-section span:hover,
+.dropdown-content a:hover,
+.dropdown-submenu:hover>a {
+    color: #1f6294;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-content-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #f9f9f9;
+    min-width: 280px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-submenu:hover .dropdown-content-submenu {
+    display: block;
+}
+
+.arrow {
+    font-size: 0.8em;
+    padding-left: 40px;
+}
+
+.dropbtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.arrow-one {
+    font-size: 1.0em;
+    transform: rotate(90deg);
+    margin-left: 5px;
+}
+
+/* Banner Section */
+.banner-section {
+    height: 400px;
+}
+
+.banner-section img {
+    width: 100%;
+    height: 400px;
+}
+
+/* cards Section */
+.cards-section {
+    height: 250px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.outer-card-section {
+    height: 250px;
+    width: 95%;
+    background-color: #ffffff;
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.card {
+    height: 170px;
+    width: 170px;
+    background-color: #474165;
+    color: #f4f9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fa-solid{
+    color: #fff;
+}
+
+.fa-regular:hover {
+    color: purple;
+}
+
+.fa-solid:hover {
+    color: purple;
+}
+
+.card-text {
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-top: 20px;
+}
+
+/*--------MAIN SECTION-------*/
+.main-section {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-main-section {
+    background-color: #112959;
+    width: 400px;
+    height: 500px;
+    text-align: left;
+    color: #f8eff7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+}
+
+.left-main-section .first-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 60px;
+    ;
+    color: #66A4D6;
+    text-transform: uppercase;
+}
+
+.left-main-section .second-text {
+    font-size: 30px;
+    margin-bottom: 20px;
+
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.left-main-section .para-text {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #2f82d7;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #1b66b3;
+}
+
+.right-main-section {
+    width: 680px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.right-main-first {
+    width: 680px;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-main-box {
+    background-color: #fbf8cb;
+    width: 210px;
+    height: 150px;
+    text-align: center;
+
+}
+
+.second-text-box {
+    font-size: 60px;
+    padding-top: 10px;
+}
+
+.third-text-box {
+    padding-top: 15px;
+    font-size: 25px;
+}
+
+.second-main-box {
+    background-color: #e9fbd5;
+    width: 210px;
+    height: 150px;
+    text-align: center;
+}
+
+.third-main-box {
+    background-color: #ddf0fe;
+    width: 210px;
+    height: 150px;
+    text-align: center;
+}
+
+.right-main-second {
+    width: 680px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-main-second img {
+    width: 50%;
+    height: 333px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+/*-------------------------------Flip card-------------
+
+.flip-card-section {
+    background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    overflow-y: auto; 
+}
+
+.outer-flip-card-section {
+    background-color: pink;
+    width: 95%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+ 
+}
+
+.first-flip-card-section,
+.second-flip-card-section {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.flip-cards,
+.second-flip-cards,
+.third-flip-cards {
+    background-color: #2f82d7;
+    height: 300px;
+    width: 370px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.flip-card-inner-card {
+    background-color: grey;
+    width: 350px;
+    height: 280px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+    opacity: 0;
+}
+
+.flip-card-inner-card:hover {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+.second-flip-card-inner-card,
+.third-flip-card-inner-card {
+    background-color: grey;
+    width: 350px;
+    height: 280px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+    opacity: 0;
+}
+.third-flip-card-inner-card:hover {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+.second-flip-card-inner-card:hover{
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+
+.thefront,
+.theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theback {
+    transform: rotateY(180deg);
+}
+*/
+
+.flip-card-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    overflow-y: auto;
+    background-color: #f3f9f9;
+}
+
+.outer-flip-card-section {
+    width: 95%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.first-flip-card-section,
+.second-flip-card-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.flip-cards,
+.second-flip-cards,
+.third-flip-cards {
+    height: 300px;
+    width: 370px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    overflow: hidden;
+    position: relative;
+    /* Make this relative so that the image and content can be positioned inside */
+}
+
+.flip-cards img,
+.second-flip-cards img,
+.third-flip-cards img {
+    position: absolute;
+    /* Absolute positioning for the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Adjust as needed */
+    height: 100%;
+    /* Adjust as needed */
+    object-fit: cover;
+    /* Ensures the image covers the container */
+    z-index: 1;
+    /* Lower z-index than the content */
+}
+
+.flip-card-inner-card,
+.second-flip-card-inner-card,
+.third-flip-card-inner-card {
+    background-color: grey;
+    width: 350px;
+    height: 280px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.flip-card-inner-card:hover,
+.second-flip-card-inner-card:hover,
+.third-flip-card-inner-card:hover {
+    transform: rotateY(180deg);
+    background-color: #1f6294;
+    cursor: pointer;
+}
+
+.thefront,
+.theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    color: #ffffff;
+    font-family: Roboto;
+    cursor: pointer;
+}
+
+.theback {
+    transform: rotateY(180deg);
+}
+
+.flip-back-text {
+    font-size: 18px;
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.flip-back-text a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+/*---------------------------------Video Section------------------------------*/
+.video-section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Testimonial-heading {
+    height: auto;
+    width: 95%;
+    text-align: center;
+    color: #0a0909;
+    padding-top: 50px;
+    font-family: Nunito, sans-serif;
+}
+
+.video-outer-box {
+    height: 480px;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*---------------------Two Images section---------------------------*/
+.two-images-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.two-images {
+    width: 95%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.inner-two-images {
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.two-img-first {
+    height: 500px;
+    width: 580px;
+}
+
+.why-we-are-best {
+    background-image: url('watch-4638673_1280.jpg');
+    /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.why-we-are-best .container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    width: 553px;
+    height: 500px;
+
+}
+
+.why-we-are-best h1 {
+    font-size: 2.6em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-left: 70px;
+    margin-top: 70px;
+}
+
+.why-we-are-best ul {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    padding-left: 90px;
+    margin-top: 30px;
+}
+
+.why-we-are-best ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+    text-align: left;
+}
+
+.why-we-are-best .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4ca1af;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    margin-left: 70px;
+}
+
+.why-we-are-best .button:hover {
+    background-color: #3b9c9c;
+}
+
+/*-------------------Client love----------------*/
+.client-love-section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.client-love-outer {
+    height: auto;
+    width: 95%;
+}
+
+.client-love-inner {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-clientlove {
+    height: 400px;
+    width: 365px;
+}
+
+/*------------------------partnership section------------------*/
+.partnership-section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.outer-partnership-section {
+    height: auto;
+    width: 95%;
+}
+
+.inner-partnership-section {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.partnership-section-img {
+    height: 120px;
+    width: 382px;
+}
+
+/*--------------------------Footer section-----------------*/
+.footer-container {
+    background-color: #322d4d;
+    color: white;
+    padding: 40px 70px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.footer-column {
+    width: 23%;
+    margin-top: 30px;
+}
+
+.footer-column h2 {
+    font-family: Nunito, sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    color: #1f6294;
+}
+
+.footer-column p {
+    font-family: Nunito, sans-serif;
+    font-size: 14px;
+}
+
+.footer-column .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-column .social-icons a {
+    color: white;
+    font-size: 18px;
+}
+
+.footer-column .get-quote input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-column .get-quote input:focus {
+    outline: none;
+}
+
+.footer-column .get-quote input[type="submit"] {
+    background-color: #1f6294;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-column .get-quote input[type="submit"]:hover {
+    background-color: #143d5d;
+}
+
+/*-------------------------------Second footer---------------------------------*/
+.second-footer-container {
+    background-color: #322d4d;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer-line {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    border-top: 1px solid #fff;
+    display: flex;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-logo img {
+    max-width: 300px;
+    margin-top: 50px;
+}
+
+.footer-logo-img {
+    height: 120px;
+    max-width: 200px;
+}
+
+.footer-text {
+    font-family: Nunito, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 100px;
+    width: 400px;
+}
